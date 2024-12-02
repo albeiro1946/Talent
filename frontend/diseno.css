@@ -1,0 +1,424 @@
+@font-face {
+    font-family: Montserrat_Alternates;
+    src: url(../font/Montserrat_Alternates/MontserratAlternates-Light.ttf);
+}
+@font-face {
+    font-family: OpenSans_Condensed-Bold;
+    src: url(../font/OpenSans_Condensed-Bold.ttf);
+}
+*{
+    margin: 1px;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+#title {
+    font-family: sans-serif;
+    color: darkblue;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    margin-right: 20px;
+}
+.search{
+    font-size: 15px;
+    text-transform: capitalize;
+}
+/*buscar en la pagina */
+#buscar{
+    padding: 10px;
+    background-color: aliceblue;
+    margin-left: 120px;
+    border-radius: 5px;
+    border-color: #0d53ea;
+    
+    
+}
+#buscar:hover{
+    background-color: #86c6fa;
+}
+.filtro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    border: 2px solid #4a90e2;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+label {
+    font-weight: bold;
+    font-family: Montserrat_Alternates;
+}
+
+#criterio {
+    padding: 5px;
+    border: 2px solid #4a90e2;
+    border-radius: 3px;
+    font-family: Montserrat_Alternates;
+}
+
+button {
+    padding: 8px 12px;
+    border: 2px solid #4a90e2;
+    background-color: #4a90e2;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #356bbd;
+}
+
+
+/* Productos________________________________________________________________________________________________________*/
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.producto {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.producto p {
+    margin: 5px 0;
+}
+
+.producto button {
+    padding: 8px 12px;
+    background-color: #4a90e2;
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.producto button:hover {
+    background-color: #356bbd;
+}
+
+/*el menu de navigacion de la pagina_________________________________________________________________________________*/
+nav {
+    background-color: #111112; /* Color de fondo */
+    display: flex;
+    justify-content: left;
+    padding: 10px 0;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    text-align: center;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Montserrat_Alternates;
+
+  }
+
+  nav a img {
+    width: 40px; /* Tamaño del icono */
+    height: 40px;
+    margin-bottom: 5px;
+  }
+
+  nav a:hover {
+    color: #00aaff; /* Color al pasar el cursor */
+  }
+
+  /*.underline {
+    width: 100%;
+    height: 2px;
+    background-color: #00ff1e;
+    margin-top: 5px;
+  }*/
+
+
+  .fondo {
+    background-image: url('../img/fondo.jpg'); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+    height: 75vh; 
+    margin: 0; 
+    padding: 2px; 
+    border-radius: 10px; 
+}
+
+/*texto de la imagen de fondo ____________________________________________________________________________________________*/
+.text {
+  position: absolute; 
+  top: 50%; 
+  left: 10%; 
+  transform: translateY(-50%); 
+  padding: 20px 30px; 
+  background: linear-gradient(45deg, #0d2872, #0d53ea, #2075d5); 
+  color: rgb(0, 0, 0); 
+  font-weight: bold; 
+  text-align: center; 
+  border-radius: 10px; 
+  text-transform: uppercase; /* Texto en mayúsculas */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+  width: 300px; 
+  font-family: OpenSans_Condensed-Bold;
+}
+
+/*sutitulo despues de la imagen de fondo ____________________________________________________________________________*/
+.subt{
+    font-family: OpenSans_Condensed-Bold;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+}
+
+/*Boton para llamar la funcion Cargar*/
+.button{
+    background-color: #4CAF50; 
+
+}
+
+.btn{
+    display: flex;
+    justify-content: center; 
+    align-items: center; /
+     
+    
+    
+    
+}
+/* imagenes apoyandonos a tus necesidades_____________________________________________________________________________________*/
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+  justify-items: center;  
+  align-items: center; 
+  }
+
+  .section {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+  }
+
+  .section .overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    color: white;
+    text-align: center;
+  }
+
+  .section h3 {
+    margin: 0px;
+    font-size: 24px;
+    margin-bottom: 0;
+    font-family: Montserrat_Alternates;
+  }
+
+  .section button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .section button:hover {
+    background-color: #0056b3;
+  }
+.button {
+    border: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 5px 4px 10px #2e1818;
+    background-color: #2758c1;
+    align-items: center;
+    
+   
+}
+
+.button:hover {
+    background-color: #0b6c82; 
+}
+
+.button:active {
+    background-color: #0277fd;
+    box-shadow: 0 2px #666;
+    transform: translateY(2px); 
+}
+
+
+/*Pagina portatiles */
+
+/* Sección de productos */
+.productos {
+  display: grid; 
+  grid-template-columns: 400px 400px 400px ;
+  background-color: rgb(255, 255, 255);
+  gap: 20px; /* Espacio entre tarjetas */
+  margin: 20px;
+  padding: 10px;
+}
+
+/* Estilo de las tarjetas */
+
+.producto {
+  border: 1px solid #ddd; /* Borde ligero */
+  padding: 15px;
+  text-align: center;
+  font-family: Montserrat_Alternates;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.producto:hover {
+  transform: scale(1.05); /* Efecto al pasar el cursor */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.producto img {
+  max-width: 70%; /* Ajustar ancho de imagen */
+  height: auto; /* Mantener proporción */
+  margin-bottom: 10px;
+}
+
+.producto h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.precio-antes {
+  text-decoration: line-through;
+  color: red;
+  font-size: 14px;
+}
+
+.precio-ahora {
+  color: green;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Botón */
+.producto button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.producto button:hover {
+  background-color: #0056b3;
+}
+
+/* Carrito */
+.carrito {
+   
+    margin-top: 20px;
+    padding: 30px;
+    border: 2px solid blue;
+    border-radius: 10px;
+    background-color: white;
+    width: 100%;
+    display: block;
+    align-content: flex-start;
+    box-shadow: 2px 5px 25px  black;
+}
+
+.carrito h2 {
+    color: blue;
+    font-family: sans-serif;
+        
+}
+
+
+.footer {
+  background-color: #2599c5;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px;
+  font-family: Montserrat_Alternates;
+  font-weight: bold;
+}
+
+.footer-section {
+  margin: 10px;
+}
+
+.footer-section p {
+  margin: 5px 0;
+}
+
+.footer-section a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.footer-bottom a {
+  color: white;
+  text-decoration: underline;
+  font-family: Montserrat_Alternates;
+  font-weight: bold;
+}
+
+.footer-section img {
+  width: 25px;
+  height: 25px;
+  margin: 0 5px;
+  
+}

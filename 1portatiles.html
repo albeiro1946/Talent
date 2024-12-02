@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Albeiro">
+    <meta name="keywords" content="final,pagina,graduacion">
+    <meta name="description" content="Proyecto final">
+    <link rel="shortcut icon" href="./img/portatiles_blue.png" type="image/x-icon">
+    <script type="text/javascript" src="frontend/script.js"></script>
+    <link rel="stylesheet" href="./frontend/diseno.css">
+    <title>PC World Shop</title>
+</head>
+
+<body>
+    <section class="containert-grid">
+        <header id="title">
+            <h1>PC World Shop</h1>
+        </header>
+        <!-- Menú de navegación -->
+        <nav class="nav-menu">
+            <a href="index.html" class="menu-item">
+                <img src="./img/home.png" alt="Home">
+                Inicio
+            </a>
+            <a href="1portatiles.html" class="menu-item">
+                <img src="./img/portatiles_blue.png" alt="Portátiles">
+                Portátiles
+            </a>
+            <a href="pcs.html" class="menu-item">
+                <img src="./img/pcs_blue.png" alt="PC's">
+                PC's
+            </a>
+            <a href="gaming.html" class="menu-item">
+                <img src="./img/gaming_blue.png" alt="Gaming">
+                Gaming
+            </a>
+            <a href="accesorios.html" class="menu-item">
+                <img src="./img/accesorios_blue.png" alt="Accesorios">
+                Accesorios
+            </a>
+            <a href="impresoras.html" class="menu-item">
+                <img src="./img/impresoras_blue.png" alt="Impresoras">
+                Impresoras
+            </a>
+
+            <section class="filtro">
+                <label for="criterio">Filtrar productos</label>
+                <input type="text" id="criterio" placeholder="Escribe el Nombre del Codigo">
+                <button onclick="cargar()">Buscar</button>
+                <button onclick="limpiar()">Limpiar</button>
+            </section>
+
+        </nav>
+        <!--imagenes precios y productos PORTATILES-->
+        <section id="resultado" class="productos">
+            <div class="producto">
+                <img src="./img/portatil1.webp" alt="Portátil Gamer Asus Tuf" />
+                <h3>Portátil Gamer Asus Tuf Ryzen 5 7535hs 24gb 512gb Rtx2050</h3>
+                <p class="precio-antes">$5.300.000</p>
+                <p class="precio-ahora">$2.829.000</p>
+                <p>Envío gratis a todo el país</p>
+                <button>Agregar al Carrito</button>
+            </div>
+            <div id="resultado" class="producto">
+                <img src="./img/portatil2.webp" alt="Portátil Gamer Asus Tuf Ryzen 5" />
+                <h3>Portátil Gamer Asus Tuf Ryzen 5</h3>
+                <p class="precio-antes">$5.300.000</p>
+                <p class="precio-ahora">$2.829.000</p>
+                <p>Envío gratis a todo el país</p>
+                <button>Agregar al Carrito</button>
+            </div>
+            <div id="resultado" class="producto">
+                <img src="./img/portatil3.webp" alt="Portátil Asus Vivobook Go" />
+                <h3>Portátil Asus Vivobook Go E1504fa Amd Ryzen 5 7520u 16gb 1tb</h3>
+                <p class="precio-antes">$2.299.000</p>
+                <p class="precio-ahora">$1.889.000</p>
+                <p>Envío gratis a todo el país</p>
+                <button>Agregar al Carrito</button>
+            </div>
+            <div id="resultado" class="producto">
+                <img src="./img/mouse.webp" alt="mouse" />
+                <h3>Mouse Logitech Ergonomico Mx Vertical Recargable Unifying</h3>
+                <p class="precio-antes">$385.000</p>
+                <p class="precio-ahora">$330.000</p>
+                <p>Envío gratis a todo el país</p>
+                <button onclick="agregarAlCarrito(codigo)">Agregar al Carrito</button>
+            </div>
+            <div id="resultado" class="producto">
+                <img src="./img/gaming.webp" alt="mouse gaming" />
+                <h3>Logitech K400 Plus Teclado Inalambrico Touch Para Smart Tv</h3>
+                <p class="precio-antes">$199.000</p>
+                <p class="precio-ahora">$177.000</p>
+                <p>Envío gratis a todo el país</p>
+                <button>Agregar al Carrito</button>
+            </div>
+            <div id="resultado" class="producto">
+                <img src="./img/teclado.webp" alt="teclado" />
+                <h3>Mouse De Juego Logitech G Series G300s Negro Ambidiestro</h3>
+                <p class="precio-antes">$199.000</p>
+                <p class="precio-ahora">$49.000</p>
+                <p>Envío gratis a todo el país</p>
+                <button>Agregar al Carrito</button>
+            </div>
+            <div id="resultado" class="producto">
+                <img src="./img/monitor1.webp" alt="teclado" />
+                <h3>Monitor Samusng 32 Odyssey G5 Curvo Gaming Qhd 165hz 1ms</h3>
+                <p class="precio-antes">$1.500.000</p>
+                <p class="precio-ahora">$1.179.000</p>
+                <p>Envío gratis a todo el país</p>
+                <button>Agregar al Carrito</button>
+            </div>
+            <div id="resultado" class="producto">
+                <img src="./img/pc1.webp" alt="teclado" />
+                <h3>Lenovo Thinkcentre Neo 50s Core I7-12700 16gb 512gb</h3>
+                <p class="precio-antes">$4.799.000</p>
+                <p class="precio-ahora">$3.859.000</p>
+                <p>Envío gratis a todo el país</p>
+                <p>codigo: "Por1001"</p>
+                <button>Agregar al Carrito</button>
+            </div>
+            <div id="resultado" class="producto">
+                <img src="./img/camara.webp" alt="teclado" />
+                <h3>Cámara Web Logitech Brio 500 Full Hd 1080p Webcam</h3>
+                <p class="precio-antes">$600.000</p>
+                <p class="precio-ahora">$450.000</p>
+                <p>Envío gratis a todo el país</p>
+                <button>Agregar al Carrito</button>
+            </div>
+            <div id="resultado" class="producto">
+                <img src="./img/monitor2.webp" alt="teclado" />
+                <h3>Cámara Web Logitech Brio 500 Full Hd 1080p Webcam</h3>
+                <p class="precio-antes">$999.000</p>
+                <p class="precio-ahora">$450.000</p>
+                <p>Envío gratis a todo el país</p>
+                <button>Agregar al Carrito</button>
+            </div>
+
+            <!-- Carrito de compras -->
+            <section  id="carrito" class="carrito">
+                <h2>Carrito de Compras</h2>
+                <p>El carrito está vacío.</p>
+            </section>
+
+        </section>
+        
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section direccion">
+                    <p><strong>Nuestra Direccion:</strong></p>
+                    <p>Carrera 31 # 10d-44</p>
+                    <p>Colombia</p>
+                </div>
+                <div class="footer-section contacto">
+                    <p><strong>Telefono:</strong></p>
+                    <p>315 2494973</p>
+                    <p>318 42931 80</p>
+                </div>
+                <div class="footer-section email">
+                    <p><strong>Email de contacto:</strong></p>
+                    <p><a href="abedoyaolmos@gmail.com"></a></p>
+                </div>
+                <div class="footer-section social">
+                    <a href="#"><img src="./img/face.ico" alt="Facebook"></a>
+                    <a href="#"><img src="./img/instagran.ico" alt="Instagram"></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 All Copyrights Reserved To House Number 3</p>
+                <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a>
+            </div>
+        </footer>
+    </section>
+</body>
+
+</html>
